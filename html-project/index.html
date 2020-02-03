@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Leeyawnz's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="left-side">
+          <div class="nav-link-wrapper active-nav-link">
+            <a href="index.html">Home</a>
+          </div>
+
+          <div class="nav-link-wrapper">
+            <a href="about.html">About</a>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="brand">
+            <div>LEEYAWNZ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <h1>LOGO</h1>
+                <!--
+                <img src="images/logos/quip.png" alt="quip">
+                -->
+              </div>
+
+              <div class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <h1>LOGO</h1>
+                <!--
+                <img src="images/logos/crondose.png" alt="crondose">
+                -->
+              </div>
+
+              <div class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <h1>LOGO</h1>
+                <!--
+                <img src="images/logos/dailysmarty.png" alt="dailysmarty">
+                -->
+              </div>
+
+              <div class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <h1>LOGO</h1>
+                <!--
+                <img src="images/logos/dashtrack.png" alt="dashtrack">
+                -->
+              </div>
+
+              <div class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <h1>LOGO</h1>
+                <!--
+                <img src="images/logos/devcamp.png" alt="devcamp">
+                -->
+              </div>
+
+              <div class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio-item-wrapper">
+            <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+
+            <div class="img-text-wrapper">
+              <div class="logo-wrapper">
+                <h1>LOGO</h1>
+                <!--
+                <img src="images/logos/devtrunk.png" alt="devtrunk">
+                -->
+              </div>
+
+              <div class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- container end -->
+  </body>
+  <script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+      portfolioItem.addEventListener('mouseover', () => {
+        portfolioItem.childNodes[1].classList.add('img-darken');
+      })
+
+      portfolioItem.addEventListener('mouseout', () => {
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+      })
+
+    })
+  </script>
+</html>
