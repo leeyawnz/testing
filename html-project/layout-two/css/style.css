@@ -120,6 +120,10 @@ nav {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5.4px, 6px);
 }
