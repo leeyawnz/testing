@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -70,7 +74,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden !important;
+    overflow-y: scroll;
   }
   /*
   .background-image {
@@ -118,10 +122,6 @@ nav {
     opacity: 1;
     transform: translateX(0px);
   }
-}
-
-body {
-  overflow-x: hidden;
 }
 
 .toggle .line1 {
