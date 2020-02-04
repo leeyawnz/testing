@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -67,10 +71,6 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
-  
   .background-image {
     position: absolute;
     top: 0px;
