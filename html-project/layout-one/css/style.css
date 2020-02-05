@@ -112,7 +112,7 @@ body {
   filter: brightness(10%);
 }
 
-/* About page */
+/* About page
 .two-column-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -128,4 +128,12 @@ body {
 
 .profile-content-wrapper h1 {
   color: lightseagreen;
+}
+*/
+
+@media screen and (max-width: 864px) {
+  .portfolio-items-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
