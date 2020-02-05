@@ -133,7 +133,7 @@ body {
 
 @media screen and (max-width: 864px) {
   .portfolio-items-wrapper {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
