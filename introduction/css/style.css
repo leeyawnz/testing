@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 3px #666666 solid;
+    animation: drop 1.5s ease;
+}
+
+.brand {
+    padding: 15px 15px 15px 25px;
+    margin-right: 100px;
+    margin-left: 5px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.nav-wrapper {
+    display: grid;
+    grid-template-columns: 16fr 4fr;
+    padding: 15px 25px 15px 15px;
+    margin-left: 100px;
+}
+
+.home {
+    margin-right: 10px;
+    text-align: end;
+}
+
+.home li {
+    list-style: none;
+}
+
+.home li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.home li a:hover {
+    border-bottom: 2px black solid;
+}
+
+.about {
+    text-align: end;
+}
+
+.about li {
+    list-style: none;
+}
+
+.about li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.about li a:hover {
+    border-bottom: 2px black solid;
+}
+
+.active-nav-link {
+    border-bottom: 2px black solid;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 150px;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    animation: enterleft 2.5s ease;
+}
+
+img {
+    padding: 50px;
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+}
+
+.intro-wrapper {
+    padding: 130px 80px 50px 0px;
+    animation: enterright 3.5s ease;
+}
+
+h1 {
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.paragraph-wrapper {
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.second-paragraph {
+    margin-top: 50px;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes enterleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes enterright {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .body-container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    img {
+        width: 80%;
+        height: 80%;
+    }
+    .intro-wrapper {
+        padding: 0px 20px;
+    }
+}
