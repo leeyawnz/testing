@@ -95,7 +95,7 @@ img {
 }
 
 .intro-wrapper {
-    padding-top: 60px;
+    padding-top: 4.5vw;
     padding-right: 120px;
     animation: enterright 3.5s ease;
 }
@@ -169,7 +169,7 @@ h1 {
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1024px) {
     .body-container {
         margin-top: 0px;
         display: grid;
