@@ -21,9 +21,9 @@ body {
 }
 
 .brand {
-    padding: 15px 15px 15px 25px;
-    margin-right: 100px;
-    margin-left: 5px;
+    padding: 1vw 1vw 1vw 1.8vw;
+    margin-right: 7.2vw;
+    margin-left: 0.3vw;
     color: black;
     font-family: 'Lato', sans-serif;
 }
@@ -31,12 +31,12 @@ body {
 .nav-wrapper {
     display: grid;
     grid-template-columns: 16fr 4fr;
-    padding: 15px 25px 15px 15px;
-    margin-left: 100px;
+    padding: 1vw 1.8vw 1vw 1vw;
+    margin-left: 7.2vw;
 }
 
 .home {
-    margin-right: 10px;
+    margin-right: 0.7vw;
     text-align: end;
 }
 
@@ -175,17 +175,23 @@ h1 {
         display: grid;
         grid-template-columns: 1fr;
     }
+    .brand {
+        padding: 1vw 1vw 1vw 1.8vw;
+    }
+    .nav-wrapper {
+        padding: 1vw 1.8vw 1vw 1vw;
+    }
     img {
-        margin-top: 40px;
+        margin-top: 5vw;
         width: 40vh;
         height: 40vh;
         animation: enterleftt 2.5s ease;
     }
     .intro-wrapper {
-        margin-top: 40px;
+        margin-top: 5vw;
         padding-top: 0px;
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 5vw;
+        padding-right: 5vw;
         animation: enterrightt 3.5s ease;
     }
 }
