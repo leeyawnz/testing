@@ -77,26 +77,26 @@ body {
 }
 
 .body-container {
+    margin-top: 150px;
     display: grid;
     grid-template-columns: 2fr 2fr;
-    margin-top: 150px;
 }
 
 .image-wrapper {
     display: flex;
     justify-content: center;
-    animation: enterleft 2.5s ease;
 }
 
 img {
-    padding: 50px;
-    width: 65%;
-    height: 65%;
+    width: 50vh;
+    height: 50vh;
     border-radius: 50%;
+    animation: enterleft 2.5s ease;
 }
 
 .intro-wrapper {
-    padding: 130px 80px 50px 0px;
+    padding-top: 60px;
+    padding-right: 120px;
     animation: enterright 3.5s ease;
 }
 
@@ -136,6 +136,17 @@ h1 {
     }
 }
 
+@keyframes enterleftt {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 @keyframes enterright {
     0% {
         opacity: 0;
@@ -147,17 +158,34 @@ h1 {
     }
 }
 
-@media screen and (max-width: 864px) {
+@keyframes enterrightt {
+    0% {
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1250px) {
     .body-container {
-        margin-top: 20px;
+        margin-top: 0px;
         display: grid;
         grid-template-columns: 1fr;
     }
     img {
-        width: 80%;
-        height: 80%;
+        margin-top: 40px;
+        width: 40vh;
+        height: 40vh;
+        animation: enterleftt 2.5s ease;
     }
     .intro-wrapper {
-        padding: 0px 20px;
+        margin-top: 40px;
+        padding-top: 0px;
+        padding-left: 70px;
+        padding-right: 70px;
+        animation: enterrightt 3.5s ease;
     }
 }
