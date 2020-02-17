@@ -17,7 +17,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 3px #666666 solid;
-    padding: 15px 0px;
+    padding: 10px 0px;
     animation: drop 1.5s ease;
 }
 
