@@ -96,6 +96,7 @@ img {
 
 .intro-wrapper {
     padding-top: 4.5vw;
+    padding-bottom: 4.5vw;
     padding-right: 120px;
     animation: enterright 3.5s ease;
 }
@@ -190,7 +191,7 @@ h1 {
         animation: enterleftt 2.5s ease;
     }
     .intro-wrapper {
-        margin-top: 50px;
+        margin-top: 40px;
         padding-bottom: 50px;
         padding-left: 6vw;
         padding-right: 6vw;
