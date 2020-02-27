@@ -8,21 +8,38 @@ body {
     background-color: white;
 }
 
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE and Edge */
+
+body {
+    -ms-overflow-style: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr;
 }
 
+
+/* nav */
+
 .nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 3px #666666 solid;
-    padding: 10px 0px;
     animation: drop 1.5s ease;
+    padding: 10px 0px;
 }
 
 .brand {
-    padding: 1vw 1vw 1vw 1.8vw;
+    padding: 0.3vw 0.3vw 0.3vw 1.8vw;
     margin-right: 7.2vw;
     margin-left: 0.3vw;
     color: black;
@@ -32,7 +49,7 @@ body {
 .nav-wrapper {
     display: grid;
     grid-template-columns: 16fr 4fr;
-    padding: 1vw 1.8vw 1vw 1vw;
+    padding: 0.3vw 1.8vw 0.3vw 100px;
     margin-left: 7.2vw;
 }
 
@@ -77,6 +94,9 @@ body {
     border-bottom: 2px black solid;
 }
 
+
+/* body for about.html*/
+
 .body-container {
     margin-top: 150px;
     display: grid;
@@ -115,6 +135,9 @@ h1 {
 .second-paragraph {
     margin-top: 50px;
 }
+
+
+/* animation */
 
 @keyframes drop {
     0% {
@@ -170,6 +193,9 @@ h1 {
         transform: translateY(0px);
     }
 }
+
+
+/* responsive website change in width */
 
 @media screen and (max-width: 1024px) {
     .body-container {
