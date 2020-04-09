@@ -242,6 +242,9 @@ h1 {
 /* responsive website change in width */
 
 @media screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
     .body-container {
         margin-top: 0px;
         display: grid;
