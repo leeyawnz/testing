@@ -268,4 +268,8 @@ h1 {
         padding-right: 6vw;
         animation: enterrightt 3.5s ease;
     }
+    
+    .main-container img {
+        overflow-x: hidden;
+    }
 }
