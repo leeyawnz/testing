@@ -5,6 +5,7 @@
 }
 
 body {
+    overflow: hidden;
     background-color: white;
 }
 
@@ -140,7 +141,6 @@ h1 {
 /* body of Home.html */
 
 .main-container img {
-    overflow: hidden;
     animation: bottomup 1.5s ease;
     position: absolute;
     z-index: -9999;
