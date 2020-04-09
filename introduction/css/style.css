@@ -140,6 +140,7 @@ h1 {
 /* body of Home.html */
 
 .main-container img {
+    overflow: hidden;
     animation: bottomup 1.5s ease;
     position: absolute;
     z-index: -9999;
@@ -266,17 +267,5 @@ h1 {
         padding-left: 6vw;
         padding-right: 6vw;
         animation: enterrightt 3.5s ease;
-    }
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    body::-webkit-scrollbar {
-        display: none;
-    }
-    /* Hide scrollbar for IE and Edge */
-    body {
-        -ms-overflow-style: none;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: 1fr;
     }
 }
