@@ -267,9 +267,4 @@ h1 {
         padding-right: 6vw;
         animation: enterrightt 3.5s ease;
     }
-    .main-container img {
-        animation: bottomup 1.5s ease;
-        position: absolute;
-        z-index: -9999;
-    }
 }
