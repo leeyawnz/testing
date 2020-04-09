@@ -272,10 +272,10 @@ h1 {
     }
     
     .main-container img {
-        width: 1024px;
+        width: 100%;
         height: auto;
     }
     .center-text {
-        font-size: 80%;
+        font-size: 12.53vh;
     }
 }
