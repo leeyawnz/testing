@@ -267,4 +267,16 @@ h1 {
         padding-right: 6vw;
         animation: enterrightt 3.5s ease;
     }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE and Edge */
+    body {
+        -ms-overflow-style: none;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
