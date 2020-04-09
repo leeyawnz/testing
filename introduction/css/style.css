@@ -5,7 +5,6 @@
 }
 
 body {
-    overflow-x: hidden;
     background-color: white;
 }
 
@@ -273,6 +272,10 @@ h1 {
     }
     
     .main-container img {
-        overflow-x: hidden;
+        width: 1024px;
+        height: auto;
+    }
+    .center-text {
+        font-size: 80%;
     }
 }
